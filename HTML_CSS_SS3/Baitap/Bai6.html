@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="www.mysever.com" method="GET">
+        <table border="0" cellpadding="0" cellspacing="2">
+            <tr>
+                <td><label for="name">Họ và tên :</label></td>
+                <td><input type="name" name="name" id="name" /></td>
+            </tr>
+            <tr>
+                <td><label for="date">Ngày sinh :</label></td>
+                <td><input type="date" name="date" id="date" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="gender">Giới tính :</lable>
+                </td>
+                <td><label><input type="radio" name="gender" id="gender" />Nam</label> <label><input type="radio"
+                            name="Gender" id="gender" />Nữ</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sdt">Số điện thoại :</label>
+                </td>
+                <td><input type="number" name="sdt" id="sdt" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" name="email" id="email" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name_company">Tên công ty :</label>
+                </td>
+                <td><textarea type="required" name="name_company" id="name_company"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="vtro">Vai trò trong công ty :</label>
+                </td>
+                <td>
+                    <select name="vtro">
+                        <option value="vtro1">Giám độc điều hành(CEO)</option>
+                        <option value="vtro2">Chủ tịch</option>
+                        <option value="vtro3">Nhân viên</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Scale">Quy mô trong công ty :</label>
+                </td>
+                <td>
+                    <select name="Scale">
+                        <option value="Scale1">Doanh nghiệp nhỏ</option>
+                        <option value="Scale2">Doanh nghiệp lớn</option>
+                        <option value="Scale3">Khu công nghiệp</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Job">Ngành nghề công ty :</label>
+                </td>
+                <td><input type="required" name="Job" id="Job" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="reason">Lý do tham gia câu lạc bộ :</label>
+                </td>
+                <td><textarea type="required" name="reason" id="reason"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="exp">Kinh nghiệm lãnh đạo :</label>
+                </td>
+                <td><textarea type="required" name="exp" id="exp"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="target">Mục tiêu khi tham gia câu lạc bộ :</label>
+                </td>
+                <td><textarea type="required" name="target" id="target"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="desire">Chương trình sự kiện mong muốn tham gia :</lable>
+                </td>
+                <td><label><input type="checkbox" name="desire" id="desire1" />Networking</label>
+                    <label><input type="checkbox" name="desire" id="desire2" />Workshops</label>
+                    <label><input type="checkbox" name="desire" id="desire3" />Hội thảo</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for="Sign_up_to_receive">Đăng kí nhận bản tin :</lable>
+                </td>
+                <td><label><input type="checkbox" name="Sign_up_to_receive" id="Sign_up_to_receive1" />Có</label></td>
+            </tr>
+            <tr>
+                <td><button>Đăng kí hội viên</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
