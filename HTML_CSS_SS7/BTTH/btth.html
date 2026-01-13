@@ -9,7 +9,7 @@
         header {
             background: linear-gradient(to right, #217ea9, #055b89);
             font-family: Arial, Helvetica, sans-serif;
-            height: 550px;
+            height: 580px;
             color: white;
         }
 
@@ -35,13 +35,15 @@
             background-color: #0288d1;
             padding: 10px;
             border-radius: 20px;
-            transition: all ease-in 2s;
             cursor: pointer;
+            transition: 0.3s ease;
+            position: relative;
+            display: inline-block;
+
         }
 
         .dl:hover {
-            position: relative;
-            bottom: 2px;
+            transform: translateY(-2px);
         }
 
         .xl {
@@ -90,15 +92,36 @@
             border: 2px solid rgb(233, 231, 231);
             border-radius: 20px;
             width: 800px;
+            padding: 10px 15px 10px 15px;
+            position: relative;
         }
 
         .box4:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);
-            transition: all 0.3s ease;
+            transition: 0.3s ease;
         }
-        .box4.text1{
-            
+        .text2{
+            font-weight: bold;
+        }
+        .text3{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 20px;
+            background-color: #6abde962;
+            color: #0288d1;
+            padding: 10px 10px 10px 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .text4{
+            color: #001be6;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        li{
+            color: #44484cc9;;
         }
     </style>
 </head>
@@ -130,22 +153,22 @@
 
     <main>
         <h2>Dịch vụ nổi bật</h2>
-        <p>Giải pháp tối ưu cho sức khỏe răng miệng và thẩm mỹ nụ cười</p>
+        <p style="color: #44484cc9;;">Giải pháp tối ưu cho sức khỏe răng miệng và thẩm mỹ nụ cười</p>
         <div class="box4">
-            <p class="text1">Cạo vôi - Đánh bóng</p>
-            <p>HOT</p>
-            <p>Làm sạch mảng bám , hạn chế viêm nướu , hơi thở thơm mát</p>
-            <ul>
-                <li>Quy trình nhẹ nhàng</li>
-                <li>Thời gian : 30-45 phút</li>
-                <li>Tư vấn chăm sóc tại nhà</li>
-            </ul>
-            <p>Xem đánh giá</p>
+                <p class="text2">Cạo vôi - Đánh bóng</p>
+                <p class="text3">HOT</p>
+                <p style="color: #44484cc9;">Làm sạch mảng bám , hạn chế viêm nướu , hơi thở thơm mát</p>
+                <ul>
+                    <li>Quy trình nhẹ nhàng</li>
+                    <li>Thời gian : 30-45 phút</li>
+                    <li>Tư vấn chăm sóc tại nhà</li>
+                </ul>
+                <p class="text4">Xem giá</p>
         </div>
     </main>
 
     <foot>
-        <p>&copy;2026 Smile</p>
+        <p style="color: #44484cc9;;">&copy;2026 Smile</p>
     </foot>
 </body>
 
