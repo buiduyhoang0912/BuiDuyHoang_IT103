@@ -30,10 +30,9 @@
         }
         main{
             background-color: aliceblue;
+            text-align: center
         }
-        h2{
-            color: rgb(3, 91, 80);
-        }
+        
         footer{
             background-color: rgb(3, 91, 80);
             text-align: center;
@@ -66,18 +65,40 @@
             <a href="./Dangki.html" class="remove">Đăng kí</a>
             <a href="./Dichvu.html" class="remove">Đăng kí lịch khám</a>
         </div>
-        <img src="./screenshot_1768129810.png" alt="anh">
     </header>
 
     <main>
-        <h2>Giới thiệu</h2>
-        <p>Phòng khám nha khoa chuyên cung cấp các dịch vụ chăm sóc răng miệng cho sinh viên và người dân</p>
-        <h2>Dịch vụ nổi bật </h2>
-        <ul>
-            <li>Khám tổng quát</li>
-            <li>Lấy cao răng</li>
-            <li>Tẩy trắng răng</li>
-        </ul>
+        <label for="name">Họ và tên</label>
+        <br>
+        <input type="text" id="name" placeholder="Nhập họ tên">
+        <br><br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" id="email" placeholder="example@gmail.com">
+        <br><br>
+        <label for="number">Số điện thoại</label>
+        <br>
+        <input type="number">
+        <br><br>
+        <label for="dvu">Chọn dịch vụ</label>
+        <br>
+        <select>
+            <option value="kham">Khám răng tổng quát</option>
+            <option value="kham1">Lấy cao răng</option>
+            <option value="kham2">Tẩy trắng răng</option>
+            <option value="kham3">Niềng răng</option>
+        </select>
+        <br><br>
+        <label for="date">Ngày khám</label>
+        <br>
+        <input type="date">
+        <br><br>
+        <label for="note">Ghi chú thêm</label>
+        <br>
+        <textarea name="ten" id="note" placeholder="Yêu cầu thêm...."></textarea>
+        <br><br>
+        <button>Gửi đăng kí</button>
+
     </main>
     <footer>
         <p>&copy;2026 Nha Khoa Chăm Sóc Nụ Cười Việt</p>
