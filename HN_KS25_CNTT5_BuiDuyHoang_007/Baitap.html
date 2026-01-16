@@ -1,448 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            font-family: cursive;
-            background-color: #fff7ed;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        h1 {
-            background-color: #fde68a;
-            color: #92400e;
-            text-transform: capitalize;
-            font-weight: bold;
-        }
-
-        header p {
-            background-color: #fed7aa;
-            font-weight: bold;
-        }
-
-        .text {
-            color: #78350f;
-        }
-
-        .text:hover {
-            background-color: #92400e;
-            color: white;
-        }
-
-        div {
-            background-color: white;
-        }
-
-        h2 {
-            color: #92400e;
-        }
-
-        footer {
-            background-color: #78350f;
-            text-align: center;
-            color: white;
-        }
-
-        .text2:hover {
-            background-color: #78350f;
-            color: yellow;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-top {
-            width: 100%;
-        }
-
-        .navigation {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-
-        .nav-list {
-            display: inline-block;
-        }
-
-        .nav-item {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        .nav-item a {
-            color: white;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-item a:hover {
-            color: #3498db;
-        }
-
-        .main {
-            background: #2c3e50;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .main-content {
-            width: 100%;
-        }
-
-        .main-title {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .main-description {
-            font-size: 20px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .main-buttons {
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            margin: 0 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #3498db;
-            transform: translateY(-2px);
-            box-shadow: none;
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background-color: white;
-            color: #3498db;
-            transform: translateY(-2px);
-        }
-
-        .introduction {
-            padding: 60px 0;
-            background-color: white;
-        }
-
-        .intro-title {
-            font-size: 28px;
-            color: #3498db;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        .intro-content {
-            padding: 20px 0;
-        }
-
-        .intro-item {
-            font-size: 16px;
-            margin-bottom: 15px;
-            color: #2c3e50;
-            line-height: 1.8;
-        }
-
-        .intro-item strong {
-            color: #3498db;
-        }
-
-        .intro-text {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #555;
-            margin-top: 20px;
-            text-align: justify;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 50px;
-            color: #2c3e50;
-        }
-
-        .products {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-
-        .products-list {
-            width: 100%;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .product-item {
-            padding: 20px;
-            border-bottom: 1px solid #ecf0f1;
-            transition: background-color 0.4s;
-        }
-
-        .product-item:last-child {
-            border-bottom: none;
-        }
-
-        .product-item:hover {
-            background-color: #f8f9fa;
-        }
-
-        .product-emoji {
-            display: inline-block;
-            font-size: 40px;
-            width: 60px;
-            vertical-align: middle;
-        }
-
-        .product-info {
-            display: inline-block;
-            width: calc(100% - 70px);
-            vertical-align: middle;
-        }
-
-        .product-info h3 {
-            font-size: 20px;
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
-
-        .product-info .price {
-            font-size: 18px;
-            color: #3498db;
-            font-weight: bold;
-        }
-
-        .product-info .old-price {
-            font-size: 14px;
-            color: #95a5a6;
-            text-decoration: line-through;
-            margin-left: 10px;
-            font-weight: normal;
-        }
-
-
-        .price-table-section {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            margin-top: 30px;
-        }
-
-        .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .price-table thead {
-            background-color: #2c3e50;
-            color: white;
-        }
-
-        .price-table th {
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        .price-table td {
-            padding: 15px;
-            border-bottom: 1px solid #ecf0f1;
-        }
-
-        .price-table tbody tr {
-            transition: background-color 0.3s ease;
-        }
-
-        .price-table tbody tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .price-table .highlight {
-            color: #3498db;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .price-table .vnd {
-            color: #3498db;
-            font-weight: bold;
-        }
-
-
-        .contact {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-
-        .contact-content {
-            width: 100%;
-            margin-top: 30px;
-        }
-
-        .contact-form {
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        .form-input,
-        .form-textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            font-family: inherit;
-        }
-
-        .form-textarea {
-            height: 120px;
-            resize: vertical;
-        }
-
-        .form-input:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: #3498db;
-        }
-
-
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .footer-text {
-            font-size: 14px;
-            color: white;
-            margin: 0;
-        }
-
-        .footer-text a {
-            color: #f39c12;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-text a:hover {
-            color: #e67e22;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Đội ngũ bác sĩ nha khoa</h1>
-        <p>
-            <span class="text">Trang chủ </span><span>|</span>
-            <span class="text">Giới thiệu </span><span>|</span>
-            <span class="text">Bác sĩ </span><span>|</span>
-            <span class="text">Liên hệ</span>
-        </p>
-        <img src="https://www.docosan.com/blog/wp-content/uploads/2020/12/BLOG-cua-Haeo-3.jpg" alt="anh">
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home">Trang chủ</a></li>
+                        <li class="nav-item"><a href="#buy">Sản phẩm</a></li>
+                        <li class="nav-item"><a href="#about">Về chúng tôi</a></li>
+                        <li class="nav-item"><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-        <div>
-            <h2>Giới thiệu</h2>
-            <p>Phòng khám quy tụ đội ngũ bác sĩ nha khoa có chuyên môn cao
-                nhiều năm kinh nghiệm và luôn tận tâm với bệnh nhân.
+
+    <section class="main" id="home">
+        <div class="container">
+            <div class="main-content">
+                <h1 class="main-title">Công nghệ tiên tiến<br>Giá cả hợp lý</h1>
+                <p class="main-description">Khám phá bộ sưu tập sản phẩm điện tử cao cấp với giá ưu đãi nhất thị trường
+                </p>
+                <div class="main-buttons">
+                    <a href="#buy" class="btn btn-primary">Mua ngay</a>
+                    <a href="#about" class="btn btn-secondary">Tìm hiểu thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduction">
+        <div class="container">
+            <h2 class="intro-title">🏪 Giới Thiệu</h2>
+            <div class="intro-content">
+                <p class="intro-item">⏰ <strong>Giờ làm việc:</strong> 8:00 - 22:00 (Tất cả các ngày trong tuần)</p>
+                <p class="intro-item">📍 <strong>Phạm vi phục vụ:</strong> Toàn quốc - Giao hàng nhanh chóng</p>
+                <p class="intro-text">
+                    RikkeiStore là cửa hàng điện tử uy tín hàng đầu Việt Nam, chuyên cung cấp các sản phẩm công nghệ
+                    chính hãng với giá cả cạnh tranh nhất thị trường. Chúng tôi cam kết mang đến trải nghiệm mua sắm
+                    tuyệt vời với dịch vụ chăm sóc khách hàng chuyên nghiệp 24/7.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="buy">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm nổi bật</h2>
+            <div class="products-list">
+                <div class="product-item">
+                    <span class="product-emoji">📱</span>
+                    <div class="product-info">
+                        <h3>Smartphone Pro Max</h3>
+                        <p class="price">25.990.000đ <span class="old-price">29.990.000đ</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <span class="product-emoji">💻</span>
+                    <div class="product-info">
+                        <h3>Laptop Gaming Ultra</h3>
+                        <p class="price">32.990.000đ <span class="old-price">39.990.000đ</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <span class="product-emoji">🎧</span>
+                    <div class="product-info">
+                        <h3>Tai nghe Wireless Pro</h3>
+                        <p class="price">4.990.000đ <span class="old-price">6.990.000đ</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <span class="product-emoji">⌚</span>
+                    <div class="product-info">
+                        <h3>Smartwatch Series 8</h3>
+                        <p class="price">8.990.000đ <span class="old-price">10.990.000đ</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-table-section">
+        <div class="container">
+            <h2 class="section-title">So sánh giá sản phẩm</h2>
+            <div class="table-wrapper">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Thương hiệu</th>
+                            <th>Giá gốc</th>
+                            <th>Giá khuyến mãi</th>
+                            <th>Tiết kiệm</th>
+                            <th>Đánh giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smartphone Pro Max</td>
+                            <td>TechBrand</td>
+                            <td>29.990.000đ</td>
+                            <td class="highlight">25.990.000đ</td>
+                            <td class="vnd">4.000.000đ</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Laptop Gaming Ultra</td>
+                            <td>GameTech</td>
+                            <td>39.990.000đ</td>
+                            <td class="highlight">32.990.000đ</td>
+                            <td class="vnd">7.000.000đ</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Tai nghe Wireless Pro</td>
+                            <td>AudioMax</td>
+                            <td>6.990.000đ</td>
+                            <td class="highlight">4.990.000đ</td>
+                            <td class="vnd">2.000.000đ</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Smartwatch Series 8</td>
+                            <td>WearTech</td>
+                            <td>10.990.000đ</td>
+                            <td class="highlight">8.990.000đ</td>
+                            <td class="vnd">2.000.000đ</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet Pro 12.9</td>
+                            <td>TechBrand</td>
+                            <td>22.990.000đ</td>
+                            <td class="highlight">19.990.000đ</td>
+                            <td class="vnd">3.000.000đ</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ với chúng tôi</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Họ và tên" class="form-input">
+                        <input type="email" placeholder="Email" class="form-input">
+                        <input type="tel" placeholder="Số điện thoại" class="form-input">
+                        <textarea placeholder="Nội dung tin nhắn" class="form-textarea"></textarea>
+                        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2026 RikkeiStore - Cửa hàng điện tử uy tín
+                <a href="#about">Về chúng tôi</a>
+                <a href="#buy">Sản phẩm</a>
+                <a href="#contact">Liên hệ</a>
             </p>
         </div>
-        <div>
-            <h2>Đội ngũ bác sĩ</h2>
-            <ol>
-                <li class="text2">Bác sĩ Nguyễn Văn A - Răng Hàm Mặt</li>
-                <li class="text2">Bác sĩ Trần Thị B - Chỉnh nha</li>
-                <li class="text2">Bác sĩ Lê Văn C - Nha khoa trẻ em</li>
-            </ol>
-        </div>
-        <div>
-            <h2>Uy tín & cam kết</h2>
-            <ul>
-                <li>Bác sĩ có những chứng chỉ hành nghề</li>
-                <li>Thiết bị hiện đại</li>
-                <li>Hơn 10.000 khách hàng tin tưởng</li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Trung tâm Nha khoa uy tín</p>
-        <p>Hotline: 0900 111 222</p>
     </footer>
 </body>
 
