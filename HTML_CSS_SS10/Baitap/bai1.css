@@ -1,0 +1,14 @@
+div img{
+    width: 150px;
+    border-radius: 10px;
+}
+.exam-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
