@@ -16,7 +16,17 @@ body {
     width: 100%
 }
 
-.menu-header ul{
+.eeeeee {
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
+
+.menu-header ul {
     display: flex;
     flex-direction: row;
     margin: 15px;
@@ -24,25 +34,29 @@ body {
     list-style: none;
     gap: 25px;
 }
-.menu-header{
+
+.menu-header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     align-items: center;
-    
+
 }
-.menu-header ul li a{
+
+.menu-header ul li a {
     text-decoration: none;
     color: white;
 }
-.box img{
+
+.box img {
     width: 100%;
     object-fit: cover;
     height: 250px;
     border-radius: 10px;
     margin: 15px;
 }
-.box{
+
+.box {
     text-align: center;
     box-shadow: 0px 8px 25px rgb(126, 108, 108);
     width: 690px;
@@ -52,47 +66,58 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
-.all{
+
+.all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.box a{
+
+.box a {
     color: #D4A373;
     text-decoration: none;
     margin-bottom: 30px;
 }
-.box p{
+
+.box p {
     margin: 15px;
     margin-bottom: 30px;
 }
-.more{
+
+.more {
     margin-top: 45px;
     justify-items: center;
+    /* position: ; */
+
 }
-.all-box{
+
+.all-box {
     width: 700px;
-    box-shadow: 0px 10px 25px  rgb(190, 181, 181);
+    box-shadow: 0px 10px 25px rgb(190, 181, 181);
     padding: 5px 15px;
     margin: 20px;
 }
-.more h1{
+
+.more h1 {
     text-align: center;
     margin-top: 80px;
 }
-footer{
+
+footer {
     background: black;
     color: white;
     font-size: 10px;
