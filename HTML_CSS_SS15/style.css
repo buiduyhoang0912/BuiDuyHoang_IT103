@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.all-header{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-header .img{
+    flex: 1;
+    width: 114px;
+    height: 40px;
+}
+.all-header .img img{
+    height: 40px;
+}
+.all-header .menu{
+    flex: 2;
+    display: flex;
+    gap: 50px;
+    justify-content: start;
+}
+.all-header .dki{
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+}
+.all-header .dki button{
+    text-decoration: none;
+    background-color: white;
+    color: #6366F1;
+    border: 1px solid #6366F1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 106px;
+    font-weight: bold;
+}
+.all-header .dki button:hover{
+    background-color: #6366F1;
+    color: white;
+    cursor: pointer;
+}
+.demo{
+    background-color: #ACAFB7;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p2{
+    background-color: #1F2937;
+}
+.menu .all-menu{
+    background-color: #1F2937;
+    color: white;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.menu .all-menu{
+    width: 80%;
+    height: 80%;
+    display: flex;
+
+}
+.menu-left{
+    flex: 7;
+}
+.menu-left .lt{
+    background-color: #404955;
+    color: white;
+    width: 84px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+}
+.menu-left .h1{
+    font-size: 40px;
+}
+.menu-left span{
+    margin-right: 20px;
+}
+.menu-left .button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+.menu-left .button img{
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.menu-right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu-right .text{
+    width: 340px;
+    background: white;
+    border-radius: 12px;
+}
+.menu-right .text .img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.all-text-one{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 50px 50px;
+    gap: 15px;
+}
+.text-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-one span{
+    color: #478A60;
+    background-color: #DCFCE7;
+    padding: 5px;
+    border-radius: 6px;
+}
+.del span{
+    font-size: 16px;
+    color: #ACAFB7;
+    text-decoration: line-through;
+}
+.udai{
+    background-color: #FEF3C7;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.button button{
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    background-color: #6366F1;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #6366F1;
+}
+.button button:hover{
+    border: 1px solid #6366F1;
+    background-color: white;
+    color: #6366F1;
+    cursor: pointer;
+}
+.list{
+    border-top: 1px solid #ACAFB7;
+    padding: 30px 0px 0px 0px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tick{
+    background-color: #F9FAFB;
+    color: #1F2937;
+    border-radius: 6px;
+}
+.p3{
+    display: flex;
+    justify-content: center;
+    background-color: #F9FAFB;
+}
+.p3 .all-box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.p3 .all-box .box-top{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+}
+.p3 .all-box .box-top .box-left{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    width: 754px;
+    height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.p3 .all-box .box-button{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+}
+.p3 .all-box .box-button .box-left{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    width: 754px;
+    height: 980px;
+}
